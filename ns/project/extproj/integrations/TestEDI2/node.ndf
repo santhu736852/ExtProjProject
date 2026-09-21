@@ -62,11 +62,16 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">Santhosh.K8@ibm.com</value>
-    <value name="createdDate">2026-09-21T11:38:20.712756159Z</value>
-    <value name="lastModifiedDate">2026-09-21T11:38:20.712756159Z</value>
+    <value name="lastModifiedBy">Santhosh.K8@ibm.com</value>
+    <value name="lastModifiedDate">2026-09-21T11:40:02.271835843Z</value>
     <value name="displayName">TestEDI2</value>
     <value name="description"></value>
+    <array name="appList" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="providerName">B2BConnector</value>
+        <value name="id">com.webmethods.edi_v2</value>
+      </record>
+    </array>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
       <record name="/0" javaclass="com.wm.util.Values">
         <null name="name"/>
@@ -86,6 +91,92 @@
         <number name="nodeIndex" type="Long">0</number>
         <number name="lineNumberForDebug" type="Long">1</number>
         <null name="mapSet"/>
+        <null name="outputMapSet"/>
+      </record>
+      <record name="/1" javaclass="com.wm.util.Values">
+        <value name="itemType">CONTROLS</value>
+        <value name="name">TRANSFORM</value>
+        <number name="ui_step_index" type="Long">2</number>
+        <value name="nodePathNew">1</value>
+        <number name="nodeIndex" type="Long">1</number>
+        <number name="lineNumberForDebug" type="Long">2</number>
+        <array name="map" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapDelete" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="transformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+      </record>
+      <null name="/1/0"/>
+      <record name="/2" javaclass="com.wm.util.Values">
+        <value name="name">Electronic Data Interchange (EDI)</value>
+        <value name="itemType">APPS</value>
+        <record name="operation" javaclass="com.wm.util.Values">
+          <value name="connectorID">com.webmethods.edi_v2</value>
+          <value name="description">Converts an EDI Message to a document by using the specified EDI Document</value>
+          <value name="isCustom">false</value>
+          <value name="isDynamicOperation">false</value>
+          <value name="isImportedOperation">false</value>
+          <value name="nsName">wm.b2b.edi:convertToValues</value>
+          <value name="operationName">convertToValues</value>
+          <value name="operationType">actions</value>
+          <null name="packageName"/>
+          <value name="projectName">project.extproj</value>
+        </record>
+        <value name="id">com.webmethods.edi_v2</value>
+        <value name="providerName">B2BConnector</value>
+        <value name="allowCustomOperations">false</value>
+        <value name="appType">predefined</value>
+        <Boolean name="hasAccount">false</Boolean>
+        <value name="type">EDI</value>
+        <value name="version">2.0</value>
+        <value name="packageName">WmEDI</value>
+        <value name="description">Enables parsing, validating, and processing of EDI documents for business integration.</value>
+        <null name="extensionName"/>
+        <null name="certified"/>
+        <value name="registry">supported</value>
+        <value name="category">miscellaneous</value>
+        <value name="registeredDate">03/03/2026</value>
+        <Boolean name="installed">true</Boolean>
+        <Boolean name="latest">false</Boolean>
+        <Boolean name="allowDeleteApplication">false</Boolean>
+        <Boolean name="allowUpdateApplication">false</Boolean>
+        <Boolean name="listenerEnabled">false</Boolean>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <array name="map" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapDelete" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="transformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="inputMap" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="outputMap" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapSet" type="record" depth="1">
+          <record javaclass="com.wm.util.Values">
+            <value name="field">/EDIFFSchema;1;0</value>
+            <value name="value">project.wmb2bdocuments.edi.schemas:X12_4010_850</value>
+            <Boolean name="variableSubstitution">false</Boolean>
+            <Boolean name="overwrite">true</Boolean>
+            <Boolean name="globalVariables">false</Boolean>
+          </record>
+        </array>
+        <record name="documentType" javaclass="com.wm.util.Values">
+          <value name="documentName"></value>
+          <value name="documentSchemaName"></value>
+          <value name="isDocumentName"></value>
+        </record>
+        <number name="ui_step_index" type="Long">3</number>
+        <value name="nodePathNew">2</value>
+        <number name="nodeIndex" type="Long">2</number>
+        <number name="lineNumberForDebug" type="Long">3</number>
         <null name="outputMapSet"/>
       </record>
     </record>
