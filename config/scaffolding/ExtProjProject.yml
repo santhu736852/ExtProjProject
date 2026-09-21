@@ -7,10 +7,15 @@ packages:
   gitUrl: https://github.com/santhu736852
   gitUsername: santhu736852
   gitBranch: main
+- name: WmB2BDocuments
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
 services:
 - serviceName: project.extproj.integrations:TestEDI2
   packages:
   - name: ExtProjProject
+    version: "1.0"
+  - name: WmB2BDocuments
     version: "1.0"
 - serviceName: pub.math:addInts
   packages:
